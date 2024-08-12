@@ -2,41 +2,71 @@
 RESET 
 ===================== */
 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ==================
 HEADER and NAVIGATION 
 ===================== */
+
+header {}
 
 /* ==================
 FOOTER 
 ===================== */
 
+footer {}
+
 /* ==================
 HERO SECTION 
 ===================== */
+
+.hero {}
 
 /* ==================
 ABOUT SECTION 
 ===================== */
 
+.about {}
+
 /* ==================
 SERVICES SECTION 
 ===================== */
+
+.services {}
 
 /* ==================
 PORTFOLIO SECTION 
 ===================== */
 
+.portfolio {}
+
 /* ==================
 TESTIMONIALS SECTION 
 ===================== */
+
+.testimonials {}
 
 /* ==================
 BLOG SECTION 
 ===================== */
 
+.blog {}
+
+/* ==================
+NEWSLETTER SECTION 
+===================== */
+
+.newsletter {}
+
 /* ==================
 CONTACT SECTION 
 ===================== */
+
+.contact {}
 
 /* ==================
 MEDIA QUERIES 

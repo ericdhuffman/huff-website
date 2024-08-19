@@ -32,6 +32,8 @@ UTILITIES
     min-height:100vh;
 }
 
+section { padding: 1rem; }
+
 a { text-decoration: none; }
   
 li { list-style: none; }
@@ -97,7 +99,7 @@ header .container {
     position: absolute;
     display: none;
     border-radius: 8px;
-    top: 35px;
+    top: 25px;
 }
   
 .dropdown li + li {
@@ -162,7 +164,7 @@ input[type=checkbox] {
    
     .dropdown {
        left: 50%;
-       top: 30px;
+       top: 15px;
        transform: translateX(35%);
     }
    

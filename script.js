@@ -1,25 +1,6 @@
-// Select elements
-const navbar = document.getElementById("navbar");
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const nav = document.querySelector(".nav");
 
-// Change background color on scroll
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+hamburgerMenu.addEventListener("click", () => {
+    nav.classList.toggle("active")
 });
-
-// Toggle mobile menu
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// Smooth scroll to section
-function scrollToSection(sectionId) {
-  document.querySelector(sectionId).scrollIntoView({
-    behavior: "smooth"
-  });
-}

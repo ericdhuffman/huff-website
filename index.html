@@ -4,88 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eric Huffman</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="navbar-container">
-        <a href="#" class="logo">Eric Huffman</a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
-          ☰
-        </button>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#info">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <header class="header">
+      <div class="nav-container">
+        <span class="logo">Eric Huffman</span>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-link"><a href="#home">Home</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#info">Work</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <span class="hamburger-menu material-symbols-outlined">menu</span>
       </div>
-    </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <!-- Source Videos -->
+          <source src="images/hero-video-1920x1080.mp4" type="video/mp4" media="(min-width: 1200px)">
+          <source src="images/hero-video-1280x720.mp4" type="video/mp4" media="(min-width: 768px)">
+          <source src="images/hero-video-640x360.mp4" type="video/mp4" media="(max-width: 767px)">
+          <!-- Fallback Image -->
+          <img src="fallback-image.jpg" alt="Background image">
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+          <h1>Eric Huffman</h1>
+          <p>Senior frontend engineer with a passion for storytelling across mediums and nearly a decade of experience creating engaging digital experiences with HTML, CSS and Javascript.</p>
+          <button class="hero-button" onclick="scrollToSection('#info')">
+            Learn More
+          </button>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <div>
+          <img src="images/headshot.jpeg" alt="Eric Huffman headshot" class="about-image"/>
+        </div>
+        <div>
+          <article>
+            <h2>Header</h2>
+            <p>Paragraph about me</p>
+          </article>
+        </div>
+      </section>
+      <section class="info-section" id="info">
+        <h2>Explore My Work</h2>
+        <div class="info-grid">
+          <div class="info-box" style="--image: url('image1.jpg')">
+            <div class="info-content">
+              <h3>Project 1</h3>
+              <p>Description of Project 1</p>
+            </div>
+          </div>
+          <div class="info-box" style="--image: url('image2.jpg')">
+            <div class="info-content">
+              <h3>Project 2</h3>
+              <p>Description of Project 2</p>
+            </div>
+          </div>
+          <div class="info-box" style="--image: url('image3.jpg')">
+            <div class="info-content">
+              <h3>Project 3</h3>
+              <p>Description of Project 3</p>
+            </div>
+          </div>
+          <div class="info-box" style="--image: url('image4.jpg')">
+            <div class="info-content">
+              <h3>Project 4</h3>
+              <p>Description of Project 4</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" style="background: #999">
+        Contact Section
+      </section>
+    </main>
+    <footer>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <video autoplay muted loop playsinline class="hero-video">
-        <!-- High-quality desktop video -->
-        <source
-          src="images/hero-video-1920x1080.mp4"
-          type="video/mp4"
-          media="(min-width: 1024px)"
-        />
-        <!-- Optimized for tablets -->
-        <source
-          src="images/hero-video-1280x720.mp4"
-          type="video/mp4"
-          media="(min-width: 768px)"
-        />
-        <!-- Mobile-friendly video -->
-        <source src="images/hero-video-960x540mp4" type="video/mp4" />
-        <!-- Fallback image -->
-        <img src="images/hero-image.jpg" alt="Hero Section Background" />
-      </video>
-      <div class="hero-overlay">
-        <h1>Hi, welcome to my site</h1>
-        <button class="hero-button" onclick="scrollToSection('#info')">
-          Learn More
-        </button>
-      </div>
-    </section>
-    <section id="about" style="height: 100vh; background: #bbb">
-      About Section
-    </section>
-    <section class="info-section" id="info">
-      <h2>Explore My Work</h2>
-      <div class="info-grid">
-        <div class="info-box" style="--image: url('image1.jpg')">
-          <div class="info-content">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
-          </div>
-        </div>
-        <div class="info-box" style="--image: url('image2.jpg')">
-          <div class="info-content">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-          </div>
-        </div>
-        <div class="info-box" style="--image: url('image3.jpg')">
-          <div class="info-content">
-            <h3>Project 3</h3>
-            <p>Description of Project 3</p>
-          </div>
-        </div>
-        <div class="info-box" style="--image: url('image4.jpg')">
-          <div class="info-content">
-            <h3>Project 4</h3>
-            <p>Description of Project 4</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" style="height: 100vh; background: #999">
-      Contact Section
-    </section>
-
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

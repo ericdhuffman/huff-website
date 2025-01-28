@@ -200,3 +200,75 @@ header {
   margin: 0 auto;
   width: 400px;
 }
+
+/* Portfolio Section Styles */
+.work-section {
+  padding: 2rem 1rem;
+}
+
+.work-section h2 {
+  font-family: 'Steelfish', sans-serif;
+  font-size: 4em;
+}
+
+.work-grid {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.work-sample {
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.work-sample:hover .work-image img {
+  filter: blur(1.4px);
+}
+
+.work-sample:hover .work-caption {
+  transform: translate(0%, -50%);
+  transition: all 0.8s ease;
+  background-color:rgba(110, 122, 92, 0.7);
+}
+
+.work-caption {
+  display: none;
+  transform: translate(100%, -50%);
+}
+
+.work-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.work-image img {
+  height: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Footer Styles */
+footer {
+  background: var(--orange);
+  color: var(--black);
+  padding: .5rem 0;
+}
+
+.footer-span {
+  display: block;
+  text-align: center;
+}
+
+.footer-nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-icon img {
+  width: 40px;
+}

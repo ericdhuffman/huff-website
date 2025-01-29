@@ -212,42 +212,17 @@ header {
 }
 
 .work-grid {
-  display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-}
-
-.work-sample {
-  width: 50%;
-  transition: all 0.3s ease-in-out;
-}
-
-.work-sample:hover .work-image img {
-  filter: blur(1.4px);
-}
-
-.work-sample:hover .work-caption {
-  transform: translate(0%, -50%);
-  transition: all 0.8s ease;
-  background-color:rgba(110, 122, 92, 0.7);
-}
-
-.work-caption {
-  display: none;
-  transform: translate(100%, -50%);
-}
-
-.work-image {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
 }
 
 .work-image img {
+  width: 100%;
   height: 400px;
-  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 /* Footer Styles */

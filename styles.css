@@ -261,6 +261,10 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer Styles */
@@ -279,7 +283,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer-nav-icon img {

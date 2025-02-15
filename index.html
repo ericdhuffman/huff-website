@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="nav-container">
         <!-- <span class="logo">Eric Huffman</span> -->
         <a href="index.html" class="logo-link"><img src="images/reel.png" class="logo-icon"></a>
@@ -27,9 +27,10 @@
       <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop playsinline>
           <!-- Source Videos -->
-          <source src="images/hero-video-1920x1080.mp4" type="video/mp4" media="(min-width: 1200px)">
+          <source src="images/hero-video-1920x1080.mp4" type="video/mp4">
+          <!-- <source src="images/hero-video-1920x1080.mp4" type="video/mp4" media="(min-width: 1200px)">
           <source src="images/hero-video-1280x720.mp4" type="video/mp4" media="(min-width: 768px)">
-          <source src="images/hero-video-640x360.mp4" type="video/mp4" media="(max-width: 767px)">
+          <source src="images/hero-video-640x360.mp4" type="video/mp4" media="(max-width: 767px)"> -->
         </video>
         <div class="hero-overlay">
           <h1>Eric Huffman</h1>
@@ -45,7 +46,7 @@
         </div>
         <div>
           <article>
-            <h2>Most people call me Huff</h2>
+            <h2>People call me Huff</h2>
             <p>I'm a lifelong Detroiter and Michigan State alum who has been building on the web for nearly a decade. I got into the industry through a combination of self-taught courses and developer meet ups. It was a bit overwhelming to start, but after landing an internship at Rock Ventures, I got my first taste of what development looks like in a corporate setting. My time at Rock Ventures was brief, but the skills I developed there allowed me to advance over the next decade. As the lead frontend developer at Xperience Communications, I was responsible for creating aesthetically pleasing, functional user interfaces in order to generate leads at high traffic events. As a software engineer at Ford Motor Company, my frontend experience allowed me to provide value to a team that was largely used to developing in languages like Java and Kotlin. I was tasked with leading the effort to use React on the frontend of our site reliability software, which offered engineering teams more visibility on how their products were performing on the company network. My most recent opportunity came through Mess Marketing, a small marketing agency based in Chicago, with a diverse collection of clients that often demanded a lot with strict deadlines. The client I found myself working with the most was Farmers Insurace, for whom I developed several dynamic interfaces for their Adbuilder platform. The work I did for Farmers directly led to thousands of digital web banners being downloaded and sent out from agents to prospective customers. I believe my career success thus far has been defined by my passion for storytelling. Having a vision for what a product should look like and how it should function, has allowed me to be able to map out every step of the development process and has guided me to making the most technically sound decisions in order to best serve the organizations I've been a part of.</p>
             <p></p>
           </article>
@@ -128,10 +129,10 @@
       <div class="footer-container">
         <span class="footer-span">&copy 2025 Eric Huffman</span>
         <nav class="footer-nav">
-          <a href="#" class="footer-nav-icon"><img src="images/Envelope1.png"></a>
-          <a href="#" class="footer-nav-icon"><img src="images/Github.png"></a>
-          <a href="#" class="footer-nav-icon"><img src="images/Linkedin.png"></a>
-          <a href="#" class="footer-nav-icon"><img src="images/Youtube.png"></a>
+          <a href="mailto:ericdhuffman@gmail.com" class="footer-nav-icon"><img src="images/Envelope1.png"></a>
+          <a href="https://github.com/ericdhuffman" class="footer-nav-icon"><img src="images/Github.png"></a>
+          <a href="https://www.linkedin.com/in/huffmaneric/" class="footer-nav-icon"><img src="images/Linkedin.png"></a>
+          <a href="https://www.youtube.com/@huffgoestothemovies" class="footer-nav-icon"><img src="images/Youtube.png"></a>
         </nav>
       </div>
     </footer>

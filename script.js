@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 });
 
 hamburgerMenu.addEventListener("click", () => {
-    nav.classList.toggle("active")
+    nav.classList.toggle("active");
 });
 
 document.getElementById('hero-button').addEventListener('click', function(event) {

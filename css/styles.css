@@ -82,7 +82,7 @@ header {
 }
 
 .hamburger-menu {
-  display: none; /* Hidden by default for larger screens */
+  display: none;
   cursor: pointer;
 }
 
@@ -93,6 +93,18 @@ header {
   }
 
   .nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    padding-top: 6rem;
+    align-items: center;
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--black);
+    transition: 0.15s ease-in-out;
     flex-direction: column;
     gap: 2rem;
   }
@@ -107,21 +119,8 @@ header {
     z-index: 2;
   }
 
-  .nav {
-    position: absolute;
-    top: 0;
-    right: -100%;
-    bottom: 0;
-    width: 100%;
-    padding-top: 6rem;
-    align-items: center;
-    text-align: center;
-    background-color: var(--orange);
-    color: var(--black);
-    transition: 0.15s ease-in-out;
-  }
-
-  .nav.active {
+   .nav.active {
+    display: flex;
     right: 0;
     z-index: 2;
   }
@@ -135,19 +134,20 @@ header {
 }
 
 .hero-wrapper {
+  min-height: 100%;
   background: 
     linear-gradient(90deg, var(--orange) 50%, transparent 0) repeat-x,
     linear-gradient(90deg, var(--orange) 50%, transparent 0) repeat-x,
     linear-gradient(0deg, var(--orange) 50%, transparent 0) repeat-y,
     linear-gradient(0deg, var(--orange) 50%, transparent 0) repeat-y;
-  background-size: 20px 0px, 20px 0px, 20px 60px, 20px 60px;
+  background-size: 20px 0px, 20px 0px, 20px 80px, 20px 80px;
   background-position: 0 0, 0 100%, 0 0, 100% 0;
   animation: linearGradientMove .9s infinite linear;
 }
 
 @keyframes linearGradientMove {
   100% {
-      background-position: 20px 0, -20px 100%, 0 -60px, 100% -60px;
+      background-position: 20px 0, -20px 100%, 0 -80px, 100% -80px;
   }
 }
 

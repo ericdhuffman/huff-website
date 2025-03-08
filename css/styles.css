@@ -135,6 +135,9 @@ header {
 
 .hero-wrapper {
   min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: 
     linear-gradient(90deg, var(--orange) 50%, transparent 0) repeat-x,
     linear-gradient(90deg, var(--orange) 50%, transparent 0) repeat-x,
@@ -152,6 +155,7 @@ header {
 }
 
 .hero-text {
+  max-width: fit-content;
   color: var(--orange);
   text-align: center;
   z-index: 1;

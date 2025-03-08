@@ -135,6 +135,7 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: var(--black);
 }
 
 .hero-video {

@@ -12,6 +12,10 @@ body, html {
   overflow-x: hidden;
 }
 
+body {
+  background-color: var(--black);
+}
+
 ul {
   list-style: none;
 }
@@ -31,7 +35,7 @@ a {
 :root {
   --orange: #f7951d;
   --white: #FFF;
-  --black: #000;
+  --black: #181818;
   --charcoal: #424242;
   --light-gray: #e0e0e0;
   --dark-gray: #4a4a4a;

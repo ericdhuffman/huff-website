@@ -31,17 +31,9 @@ a {
 /* === COLORS === */
 :root {
   --orange: #f7951d;
-  --white: #FFF;
-  --black: #181818;
-  --charcoal: #424242;
-  --light-gray: #e0e0e0;
-  --dark-gray: #4a4a4a;
-  --teal: #009999;
-  --light-yellow: #ffcc00;
-  --emerald-green: #2ecc71;
-  --purple: #9b59b6;
-  --red-orange: #d84e09;
-  --navy-blue: #003366;
+  --white: #fef7ed;
+  --black: #010100;
+  --gray: #8b8a89;
 }
 
 /* Navbar Styles */
